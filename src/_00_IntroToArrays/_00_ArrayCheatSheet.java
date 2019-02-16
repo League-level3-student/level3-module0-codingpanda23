@@ -13,7 +13,9 @@ public class _00_ArrayCheatSheet {
 		//4. print the third element again
 			System.out.println(purples[2]);
 		//5. use a for loop to set all the elements in the array to a string of your choice
-		
+			for (int i = 0; i < purples.length; i++) {
+				
+			}
 		//6. use a for loop to print all the values in the array
 		//   BE SURE TO USE THE ARRAY'S length VARIABLE
 		
