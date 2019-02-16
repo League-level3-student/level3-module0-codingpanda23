@@ -5,13 +5,13 @@ import java.util.Random;
 public class _00_ArrayCheatSheet {
 	public static void main(String[] args) {
 		//1. make an array of 5 Strings
-
+			String[] purples = {"mauve","lavender","plum","sangria","periwinkle"};
 		//2. print the third element in the array
-
+			//System.out.println(purples[2]);
 		//3. set the third element to a different value
-
+			purples[2]="iris";
 		//4. print the third element again
-		
+			System.out.println(purples[2]);
 		//5. use a for loop to set all the elements in the array to a string of your choice
 		
 		//6. use a for loop to print all the values in the array
