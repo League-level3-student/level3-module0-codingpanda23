@@ -26,6 +26,7 @@ public class _01_RobotRace {
 	    //   a random amount less than 50.
 				for (int i = 0; i < ro.length; i++) {
 					
+					
 				}
 		//6. use a while loop to repeat step 5 until a robot has reached the top of the screen.
 
