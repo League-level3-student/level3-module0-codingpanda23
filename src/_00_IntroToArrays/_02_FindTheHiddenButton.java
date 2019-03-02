@@ -53,11 +53,10 @@ public class _02_FindTheHiddenButton implements ActionListener{
 			window.setExtendedState(JFrame.MAXIMIZED_BOTH);
 		//11. set the JFrame to visible.
 			window.setVisible(true);
-			window.pack();
 		//12. Give the user the instructions for the game.
-		
+			JOptionPane.showMessageDialog(null, "Click on the button labeled ME");
 		//13. initialize the hiddenButton variable to a random number less than the int created in step 3
-		
+			Random r = new Random();
 		//14. Set the text of the JButton located at hiddenButton to read "ME"
 
 		//15. Use Thread.sleep(100); to pause the program.
