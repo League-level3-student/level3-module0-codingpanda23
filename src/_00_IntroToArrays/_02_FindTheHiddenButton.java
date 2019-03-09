@@ -57,12 +57,18 @@ public class _02_FindTheHiddenButton implements ActionListener{
 			JOptionPane.showMessageDialog(null, "Click on the button labeled ME");
 		//13. initialize the hiddenButton variable to a random number less than the int created in step 3
 			Random r = new Random();
+			hiddenButton = r.nextInt(number);
 		//14. Set the text of the JButton located at hiddenButton to read "ME"
-
+			b[hiddenButton].setText("ME!");
 		//15. Use Thread.sleep(100); to pause the program.
-		
+			try {
+				Thread.sleep(100);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		//16. Set the text of the JButton located at hiddenButton to be blank.
-		
+			b[hiddenButton].setText(" ");
 	}
 
 	@Override
@@ -70,7 +76,12 @@ public class _02_FindTheHiddenButton implements ActionListener{
 		JButton buttonClicked = (JButton)e.getSource();
 		
 		//17. if the hiddenButton is clicked, tell the user that they win.
-
+			if (b[hiddenButton]==buttonClicked) {
+				JOptionPane.showMessageDialog(null, "U WIN!!!");
+			}
 		//18. else tell them to try again
+			else {
+				JOptionPane.showMessageDialog(null, "U LOSE!! DO IT AGAIN!!");
+			}
 	}
 }
